@@ -1,7 +1,7 @@
 <?php
 $xpdo_meta_map['extUser']= array (
   'package' => 'extendeduser',
-  'version' => NULL,
+  'version' => '1.0.0',
   'extends' => 'modUser',
   'fields' => 
   array (

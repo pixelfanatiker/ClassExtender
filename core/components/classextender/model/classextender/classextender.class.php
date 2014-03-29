@@ -48,7 +48,7 @@
 
     public function init() {
         $this->package = $this->modx->getOption('package', $this->props, 'extendeduser');
-        $this->prefix = $this->modx->getOption('tablePrefix', $this->props, 'ext_');
+        $this->prefix = $this->modx->getOption('tablePrefix', $this->props, '');
         $this->tableName = $this->modx->getOption('tableName', $this->props, 'userData');
         $this->dirPermission = (int) $this->modx->getOption('dirPermission', $this->props, 0755);
         $manager = $this->modx->getManager();
@@ -137,5 +137,4 @@
              return false;
          }
      }
-
 }

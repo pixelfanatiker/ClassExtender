@@ -45,13 +45,10 @@ $fields = array(
     'lastName'         => '',
     'title'            => '',
     'company'          => '',
-    'registrationDate' => 0,
-    'category1'        => '',
-    'category1_Other'  => '',
-    'category2'        => '',
-    'category2_Other'  => '',
-    'category3'        => '',
-    'category3_Other'  => '',
+    'dor'              => 0,
+    'affiliate'        => '',
+    'usertype'         => '',
+    ''  => '',
 );
 
 $data = null;
@@ -86,13 +83,8 @@ switch ($modx->event->name) {
             $fields['lastName'] = $data->get('lastName');
             $fields['title'] = $data->get('title');
             $fields['company'] = $data->get('company');
-            $fields['category1'] = $data->get('category1');
-            $fields['category2'] = $data->get('category2');
-            $fields['category3'] = $data->get('category3');
-            $fields['category1_Other'] = $data->get('category1_Other');
-            $fields['category2_Other'] = $data->get('category2_Other');
-            $fields['category3_Other'] = $data->get('category3_Other');
-
+            $fields['affiliate'] = $data->get('affiliate');
+            $fields['usertype'] = $data->get('usertype');
 
 
             foreach ($fields as $key => $field) {

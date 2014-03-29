@@ -1,12 +1,12 @@
 <?php
 
-$packageNameLower = 'example'; /* No spaces, no dashes */
+$packageNameLower = 'ExtendedUser'; /* No spaces, no dashes */
 
 $components = array(
     /* These are used to define the package and set values for placeholders */
     'packageName' => 'Example',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
-    'packageDescription' => 'Example project for MyComponent extra',
+    'packageDescription' => 'Extend the standard UserProfile.',
     'version' => '1.0.0',
     'release' => 'beta1',
     'author' => 'Bob Ray',
@@ -19,7 +19,7 @@ $components = array(
     /* no need to edit this except to change format */
     'createdon' => strftime('%m-%d-%Y'),
 
-    'gitHubUsername' => 'BobRay',
+    'gitHubUsername' => 'pixelfanatiker',
     'gitHubRepository' => 'Example',
 
     /* two-letter code of your primary language */
@@ -33,7 +33,7 @@ $components = array(
 
     /* path to MyComponent source files */
     'mycomponentRoot' => $this->modx->getOption('mc.root', null,
-        MODX_CORE_PATH . 'components/mycomponent/'),
+        MODX_CORE_PATH . 'components/extendeduser/'),
 
     /* path to new project root */
     'targetRoot' => MODX_ASSETS_PATH . 'mycomponents/' . $packageNameLower . '/',

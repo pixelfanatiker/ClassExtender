@@ -1,8 +1,8 @@
 <?php
 $xpdo_meta_map['userData']= array (
   'package' => 'extendeduser',
-  'version' => NULL,
-  'table' => 'data',
+  'version' => '1.0.0',
+  'table' => 'user_data',
   'extends' => 'xPDOSimpleObject',
   'fields' => 
   array (
@@ -11,13 +11,9 @@ $xpdo_meta_map['userData']= array (
     'lastName' => NULL,
     'title' => NULL,
     'company' => NULL,
-    'registrationDate' => NULL,
-    'category1' => NULL,
-    'category1_Other' => NULL,
-    'category2' => NULL,
-    'category2_Other' => NULL,
-    'category3' => NULL,
-    'category3_Other' => NULL,
+    'dor' => NULL,
+    'affiliate' => NULL,
+    'usertype' => NULL,
   ),
   'fieldMeta' => 
   array (
@@ -57,47 +53,19 @@ $xpdo_meta_map['userData']= array (
       'phptype' => 'string',
       'null' => true,
     ),
-    'registrationDate' => 
+    'dor' => 
     array (
       'dbtype' => 'datetime',
       'phptype' => 'datetime',
     ),
-    'category1' => 
+    'affiliate' => 
     array (
       'dbtype' => 'varchar',
       'precision' => '100',
       'phptype' => 'string',
       'null' => true,
     ),
-    'category1_Other' => 
-    array (
-      'dbtype' => 'varchar',
-      'precision' => '100',
-      'phptype' => 'string',
-      'null' => true,
-    ),
-    'category2' => 
-    array (
-      'dbtype' => 'varchar',
-      'precision' => '100',
-      'phptype' => 'string',
-      'null' => true,
-    ),
-    'category2_Other' => 
-    array (
-      'dbtype' => 'varchar',
-      'precision' => '100',
-      'phptype' => 'string',
-      'null' => true,
-    ),
-    'category3' => 
-    array (
-      'dbtype' => 'varchar',
-      'precision' => '100',
-      'phptype' => 'string',
-      'null' => true,
-    ),
-    'category3_Other' => 
+    'usertype' => 
     array (
       'dbtype' => 'varchar',
       'precision' => '100',
@@ -126,9 +94,8 @@ $xpdo_meta_map['userData']= array (
   ),
   'aggregates' => 
   array (
-    'User' => 
+    'extUser' => 
     array (
-      'class' => 'modUser',
       'local' => 'userdata_id',
       'foreign' => 'id',
       'cardinality' => 'one',
